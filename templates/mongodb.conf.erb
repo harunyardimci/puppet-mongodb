@@ -1,0 +1,26 @@
+
+port = <%= @port %>
+
+fork = <%= @fork %>
+
+dbpath = <%= @dbpath %>
+
+<% if @rest -%>
+rest = <%= @rest %>
+<% end -%>
+
+logpath = <%= @logpath %>
+logappend = <%= @logappend %>
+
+<% if @bind_ip -%>
+bind_ip =<%= @bind_ip %>
+<% end -%>
+
+<% if @auth -%>
+keyFile = <%= @keyfile %> 
+<% end -%>
+
+
+<% if @mongos -%>
+configdb = <%= @configdb %> 
+<% end -%>
